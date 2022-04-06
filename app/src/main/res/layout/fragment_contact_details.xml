@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ContactDetailsFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:textSize="50sp"
+            android:text="Contact Details"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/showPhoneTV"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                tools:text="12345678912"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/callIconTV"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/call_img"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"/>
+
+            <ImageView
+                android:id="@+id/smsIconIV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:src="@drawable/sms_img"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp">
+
+            <TextView
+                android:id="@+id/showEmailTV"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                tools:text="abc@gmail.com"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/emailIconIV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:src="@drawable/email_img"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp">
+
+            <TextView
+                android:id="@+id/showAddressTV"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                tools:text="abc@gmail.com"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/addressIconIV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:src="@drawable/loc_img"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
