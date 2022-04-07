@@ -27,8 +27,8 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
-            app:backgroundTint="#5EA5DD"
             android:clickable="true"
-            android:src="@android:drawable/ic_input_add" />
+            android:src="@android:drawable/ic_input_add"
+            app:backgroundTint="#5EA5DD" />
     </RelativeLayout>
 </layout>

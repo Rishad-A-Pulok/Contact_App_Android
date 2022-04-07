@@ -20,7 +20,7 @@
             android:textSize="50sp"
             android:text="Contact Details"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#5EA5DD"
             android:layout_gravity="center" />
 
         <LinearLayout
@@ -37,6 +37,7 @@
                 android:layout_weight="3"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
+                android:textColor="@color/black"
                 tools:text="12345678912"
                 android:textSize="25sp" />
 
@@ -47,6 +48,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:src="@drawable/call_img"
+                android:background="#5EA5DD"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?selectableItemBackground"/>
@@ -56,6 +58,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="#5EA5DD"
                 android:src="@drawable/sms_img"
                 android:clickable="true"
                 android:focusable="true"
@@ -74,6 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 tools:text="abc@gmail.com"
+                android:textColor="@color/black"
                 android:textSize="25sp" />
 
             <ImageView
@@ -82,6 +87,7 @@
                 android:layout_weight="1"
                 android:layout_height="40dp"
                 android:layout_gravity="left"
+                android:background="#5EA5DD"
                 android:src="@drawable/email_img"
                 android:clickable="true"
                 android:focusable="true"
@@ -98,6 +104,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="4"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:layout_gravity="right"
                 tools:text="abc@gmail.com"
                 android:textSize="25sp" />
@@ -109,6 +116,7 @@
                 android:layout_height="40dp"
                 android:layout_gravity="left"
                 android:src="@drawable/loc_img"
+                android:background="#5EA5DD"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?selectableItemBackground"/>
