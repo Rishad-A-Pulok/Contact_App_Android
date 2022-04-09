@@ -41,29 +41,45 @@
                 tools:text="12345678912"
                 android:textSize="25sp" />
 
-            <ImageView
-                android:id="@+id/callIconTV"
+            <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@drawable/call_img"
-                android:background="#5EA5DD"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?selectableItemBackground"/>
+                app:cardCornerRadius="50dp">
+                <ImageView
+                    android:id="@+id/callIconTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/call_img"
+                    android:background="#5EA5DD"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground" />
+            </androidx.cardview.widget.CardView>
 
-            <ImageView
-                android:id="@+id/smsIconIV"
+            <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="40dp"
-                android:layout_marginLeft="10dp"
-                android:background="#5EA5DD"
-                android:src="@drawable/sms_img"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?selectableItemBackground"/>
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:cardCornerRadius="50dp">
+                <ImageView
+                    android:id="@+id/smsIconIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/sms_img"
+                    android:background="#5EA5DD"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground" />
+            </androidx.cardview.widget.CardView>
+
+
 
         </LinearLayout>
         <LinearLayout
@@ -81,17 +97,25 @@
                 android:textColor="@color/black"
                 android:textSize="25sp" />
 
-            <ImageView
-                android:id="@+id/emailIconIV"
+            <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="40dp"
-                android:layout_gravity="left"
-                android:background="#5EA5DD"
-                android:src="@drawable/email_img"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?selectableItemBackground"/>
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:cardCornerRadius="50dp">
+                <ImageView
+                    android:id="@+id/emailIconIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/email_img"
+                    android:background="#5EA5DD"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground" />
+            </androidx.cardview.widget.CardView>
+
 
         </LinearLayout>
         <LinearLayout
@@ -106,20 +130,30 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:layout_gravity="right"
-                tools:text="abc@gmail.com"
+                tools:text="Dhaka, Bangladesh"
                 android:textSize="25sp" />
 
-            <ImageView
-                android:id="@+id/addressIconIV"
+            <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="40dp"
-                android:layout_gravity="left"
-                android:src="@drawable/loc_img"
-                android:background="#5EA5DD"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?selectableItemBackground"/>
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/addressIconIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/loc_img"
+                    android:background="#5EA5DD"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground" />
+            </androidx.cardview.widget.CardView>
+
+
 
         </LinearLayout>
     </LinearLayout>

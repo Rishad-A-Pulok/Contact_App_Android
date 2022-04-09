@@ -14,41 +14,52 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        app:cardCornerRadius="5dp"
+        app:cardCornerRadius="15dp"
         app:cardElevation="5dp"
-        app:contentPadding="5dp">
+        app:contentPadding="10dp">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="80dp">
 
             <TextView
                 android:id="@+id/rowNameTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                android:text="@{contacts.name}"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Contact Name"
-                android:text="@{contacts.name}"/>
+                tools:text="Contact Name" />
 
-            <ImageView
-                android:id="@+id/showInfoIV"
-                android:layout_width="36dp"
-                android:layout_height="20dp"
+            <androidx.cardview.widget.CardView
+                android:layout_width="56dp"
+                android:layout_height="29dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.482"
-                app:srcCompat="@drawable/info_img"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?selectableItemBackground"/>
+                app:layout_constraintVertical_bias="0.482">
+
+                <ImageView
+                    android:id="@+id/showInfoIV"
+                    android:layout_width="56dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:background="#5EA5DD"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    app:srcCompat="@drawable/info_img" />
+            </androidx.cardview.widget.CardView>
+
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
